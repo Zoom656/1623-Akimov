@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_1623_Akimov"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Первое графическое приложение Акимов Т.А." Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+
+
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="45"/>
+
+
+        </Grid.RowDefinitions>
+        <Frame Content="Frame" Name="MainFrame"  Grid.Row="1" RenderTransformOrigin="0.496,0.504" Height="344" VerticalAlignment="Center" HorizontalAlignment="Center" Width="800"/>
+
     </Grid>
 </Window>
