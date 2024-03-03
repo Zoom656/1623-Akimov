@@ -19,7 +19,8 @@
 
 
         </Grid.RowDefinitions>
-        <Frame Content="Frame" Name="MainFrame"  Grid.Row="1" RenderTransformOrigin="0.496,0.504" Height="344" VerticalAlignment="Center" HorizontalAlignment="Center" Width="800"/>
+        <Frame Content="Frame" Name="MainFrame"  Grid.Row="1" RenderTransformOrigin="0.496,0.504" Height="344" VerticalAlignment="Center" HorizontalAlignment="Left" Width="800"/>
+        <Button Content="Назад" HorizontalAlignment="Right" Margin="0,0,719,0" VerticalAlignment="Center" Height="27" Width="73"/>
 
     </Grid>
 </Window>
