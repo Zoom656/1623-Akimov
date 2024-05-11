@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:_1623_Akimov.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Регистрация">
+      Title="Регистрация"> 
 
     <Grid>
         
