@@ -5,10 +5,35 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:_1623_Akimov.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="330" d:DesignWidth="800"
       Title="Авторизация">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="58*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Логин" Grid.Row="0" Grid.Column="0" Height="30" Width="150" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
+               FontFamily="Arial" FontSize="12"/>
+        <TextBox Name="txtLog" Grid.Row="0" Grid.Column="1" Height="30" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите логин или почту"
+               FontFamily="Arial" FontSize="12" Background="Transparent"/>
+        <TextBlock Margin="5" Text="Логин или почта" Foreground="Gray" Name="txtHintLog" Grid.Column="1" Height="30" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left"
+               FontFamily="Arial" FontSize="12"/>
+        <Label Content="Пароль" Grid.Row="1" Grid.Column="0" Height="30" Width="150" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
+               FontFamily="Arial" FontSize="12"/>
+        <PasswordBox Name="pswPar" Grid.Row="1" Grid.Column="2" Height="30" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите пароль"
+               FontFamily="Arial" FontSize="12" Background="Transparent"/>
+        <TextBlock Margin="5,5" Text="Пароль" Foreground="Gray" Name="txtHintPar" Grid.Row="1" Grid.Column="2" Height="30" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left"
+               FontFamily="Arial" FontSize="12"/>
+        <Button Content="Вход" Grid.Row="2" Grid.ColumnSpan="2" ToolTip="нажмите для входа" Height="50" Width="150"
+               FontFamily="Arial" FontSize="12" Background="Gray" />
+        <Button Content="Регистрация" Grid.Row="3" Grid.ColumnSpan="2" ToolTip="нажмите для регистрации" Height="50" Width="150"
+               FontFamily="Arial" FontSize="12" Background="Gray" />
     </Grid>
 </Page>
