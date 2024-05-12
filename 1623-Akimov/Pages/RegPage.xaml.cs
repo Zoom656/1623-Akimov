@@ -23,6 +23,22 @@ namespace _1623_Akimov.Pages
         public RegPage()
         {
             InitializeComponent();
+            cmbRegRole.SelectedIndex = 1;
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void cmbRole_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void btnRegCncl_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AuthPage());
         }
     }
 }

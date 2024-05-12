@@ -24,5 +24,21 @@ namespace _1623_Akimov
         {
             InitializeComponent();
         }
+
+        private void btnMainBack_Click(object sender, RoutedEventArgs e)
+        {
+            if (MainFrame.CanGoBack) MainFrame.GoBack();
+        }
+        private void MainFrame_OnNavigated(object sender, NavigationEventArgs e)
+        {
+            if (!(e.Content is Page page)) return;
+            this.Title = $"ProjectByAkimov - {page.Title}";
+
+            if (page is Pages.AuthPage)
+                btnMainBack.Visibility = Visibility.Hidden;
+            else
+                btnMainBack.Visibility = Visibility.Visible;
+        }
     }
 }
+

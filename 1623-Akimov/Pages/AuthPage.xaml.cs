@@ -24,5 +24,10 @@ namespace _1623_Akimov.Pages
         {
             InitializeComponent();
         }
+
+        private void btnAuthReg_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new RegPage());
+        }
     }
 }
