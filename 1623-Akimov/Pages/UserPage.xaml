@@ -54,6 +54,31 @@
         </Button>
         <TextBlock Grid.Row="5" Grid.Column="0" Height="30" Width="200" Margin="5" Text="Всего пользователей: 123" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Left"
             FontFamily="Arial" FontSize="16"/>
+        <DataGrid AutoGenerateColumns="False" IsReadOnly="True" Grid.ColumnSpan="3" Grid.Row="6">
+           
+            <DataGrid.Columns>
+                    <DataGridTextColumn Header="Имя" Width="*"/>
+                    <DataGridTextColumn Header="Фамилия" Width="*"/>
+                    <DataGridTextColumn Header="Email" Width="*"/>
+                    <DataGridTextColumn Header="Роль" Width="*"/>
+                    <DataGridTemplateColumn Header="Редактирование" Width="*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Edit"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+            
+
+            </DataGrid.Columns>
+            <DataGrid.Items>
+               
+
+
+            </DataGrid.Items>
+        </DataGrid>
+
     </Grid>
     
     
