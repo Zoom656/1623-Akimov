@@ -16,23 +16,13 @@ using System.Windows.Shapes;
 namespace _1623_Akimov.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AuthPage.xaml
+    /// Логика взаимодействия для UserPage.xaml
     /// </summary>
-    public partial class AuthPage : Page
+    public partial class UserPage : Page
     {
-        public AuthPage()
+        public UserPage()
         {
             InitializeComponent();
-        }
-
-        private void btnAuthReg_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new RegPage());
-        }
-
-        private void btnUsr_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new UserPage());
         }
     }
 }

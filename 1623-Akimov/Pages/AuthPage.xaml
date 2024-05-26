@@ -27,13 +27,15 @@
                FontFamily="Arial" FontSize="12"/>
         <Label Content="Пароль" Grid.Row="1" Grid.Column="0" Height="30" Width="150" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
                FontFamily="Arial" FontSize="12"/>
-        <PasswordBox Name="pswAuthPar" Grid.Row="1" Grid.Column="2" Height="30" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите пароль"
+        <PasswordBox Name="pswAuthPar" Grid.Row="1" Grid.Column="1" Height="30" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите пароль"
                FontFamily="Arial" FontSize="12" Background="Transparent"/>
-        <TextBlock Margin="5,5" Text="Пароль" Foreground="Gray" Name="txtHintPar" Grid.Row="1" Grid.Column="2" Height="30" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left"
+        <TextBlock Margin="5" Text="Пароль" Foreground="Gray" Name="txtHintPar" Grid.Row="1" Grid.Column="2" Height="30" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left"
                FontFamily="Arial" FontSize="12"/>
         <Button Name="btnAuthEntr" Content="Вход" Grid.Row="2" Grid.ColumnSpan="2" ToolTip="нажмите для входа" Height="50" Width="150"
                FontFamily="Arial" FontSize="12" Background="Gray"/>
         <Button Name="btnAuthReg" Content="Регистрация" Grid.Row="3" Grid.ColumnSpan="2" ToolTip="нажмите для регистрации" Height="50" Width="150"
                FontFamily="Arial" FontSize="12" Background="Gray" Click="btnAuthReg_Click"/>
+        <Button Name="btnUsr" Content="Пользователи" Grid.Row="3" Grid.Column="1" Height="50" Width="150" Margin="5"
+               Background="Gray" HorizontalAlignment="Right" Click="btnUsr_Click"/>
     </Grid>
 </Page>
