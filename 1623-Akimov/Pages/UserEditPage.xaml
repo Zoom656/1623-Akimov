@@ -91,11 +91,11 @@
 
         </PasswordBox>
         
-        <Button Name="btnUsredSave" Content="Сохранить" Grid.Row="8" Grid.Column="1" ToolTip="нажмите чтобы сохранить" Height="30" Width="100"
-             FontFamily="Arial" FontSize="12" Background="Gray" HorizontalAlignment="Right" Margin="10" />
+        <Button Name="btnUsredSave" Content="Сохранить" Grid.Row="8" Grid.Column="1" ToolTip="нажмите чтобы сохранить" Width="100"
+             HorizontalAlignment="Right" Margin="10" />
 
-        <Button Name="btnUsredCncl" Content="Отмена" Grid.Row="8" Grid.Column="2" ToolTip="нажмите для отмены" Height="30" Width="100"
-            FontFamily="Arial" FontSize="12" Background="Gray" HorizontalAlignment="Left" Margin="10" Click="btnUsredCncl_Click"/>
+        <Button Name="btnUsredCncl" Content="Отмена" Grid.Row="8" Grid.Column="2" ToolTip="нажмите для отмены" Width="100"
+            HorizontalAlignment="Left" Margin="10" Click="btnUsredCncl_Click"/>
 
     </Grid>
 </Page>

@@ -25,27 +25,32 @@
                     FontFamily="Arial" FontSize="12"/>
         <TextBox Name="txtRegLog" Grid.Row="0" Grid.Column="1" Height="25" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите логин или почту"
                     FontFamily="Arial" FontSize="12" Background="Transparent"/>
+        
         <Label Content="Введите пароль" Grid.Row="1" Grid.Column="0" Height="25" Width="150" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
                     FontFamily="Arial" FontSize="12"/>
         <PasswordBox Name="pswRegPar" Grid.Row="1" Grid.Column="1" Height="25" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите пароль"
                      FontFamily="Arial" FontSize="12" Background="Transparent"/>
+        
         <Label Content="Подтвердите пароль" Grid.Row="2" Grid.Column="0" Height="25" Width="150" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
                      FontFamily="Arial" FontSize="12"/>
         <PasswordBox Name="pswRegRepPar" Grid.Row="2" Grid.Column="1" Height="25" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите пароль еще раз"
                      FontFamily="Arial" FontSize="12" Background="Transparent"/>
+        
         <Label Content="Выберите роль" Grid.Row="3" Grid.Column="0" Height="25" Width="150" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
                      FontFamily="Arial" FontSize="12"/>
         <ComboBox Name="cmbRegRole"  Grid.Row="3" Grid.Column="1" Height="25" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите роль" SelectionChanged="cmbRole_SelectionChanged">
             <ComboBoxItem>Администратор</ComboBoxItem>
             <ComboBoxItem>Пользователь</ComboBoxItem>
         </ComboBox>
+        
         <Label Content="Введите ФИО" Grid.Row="4" Grid.Column="0" Height="25" Width="150" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
             FontFamily="Arial" FontSize="12"/>
         <TextBox Name="txtRegFIO" Grid.Row="4" Grid.Column="1" Height="25" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите ФИО"
             FontFamily="Arial" FontSize="12" Background="Transparent"/>
-        <Button Name="btnRegCncl" Content="Отмена" Grid.Row="5" Grid.Column="0" ToolTip="нажмите для выхода" Height="50" Width="150"
-                     FontFamily="Arial" FontSize="12" Background="Gray" Click="btnRegCncl_Click"/>
-        <Button Name="btnRegReg" Content="Регистрация" Grid.Row="5" Grid.Column="1" ToolTip="нажмите для регистрации" Height="50" Width="150"
-                     FontFamily="Arial" FontSize="12" Background="Gray" />
+        
+        <Button Name="btnRegCncl" Content="Отмена" Grid.Row="5" Grid.Column="0" ToolTip="нажмите для выхода"  Width="150"
+                     Click="btnRegCncl_Click"/>
+        
+        <Button Name="btnRegReg" Content="Регистрация" Grid.Row="5" Grid.Column="1" ToolTip="нажмите для регистрации" Width="150"/>
     </Grid>
 </Page>

@@ -11,18 +11,18 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50*"/>
             <RowDefinition Height="50*"/>
-            <RowDefinition Height="200*"/>
+            <RowDefinition Height="244*"/>
         </Grid.RowDefinitions>
 
         <Label Grid.Row="0" Content="Бизнес-партнеры" Grid.ColumnSpan="2" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center"
             FontFamily="Arial" FontSize="20"/>
 
-        <Button Name="btnUsrNew"  Grid.Row="1" ToolTip="нажмите для создания нового пользователя" Height="40" Width="160" Margin="5,0,0,0" 
-            FontFamily="Arial" FontSize="16" Background="Gray" VerticalAlignment="Center" HorizontalAlignment="Left">
+        <Button Name="btnUsrNew"  Grid.Row="1" ToolTip="нажмите для создания нового пользователя" Height="40" Width="160"  
+             VerticalAlignment="Center" HorizontalAlignment="Left">
             <TextBlock TextAlignment="Center"> + Добавить нового</TextBlock>
         </Button>
 
-        <DataGrid AutoGenerateColumns="False" IsReadOnly="True" Grid.ColumnSpan="4" Grid.Row="3" Width="790"> 
+        <DataGrid AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="2" Width="790"> 
 
             <DataGrid.Columns>
                 <DataGridTemplateColumn Header="Лого" Width="60">

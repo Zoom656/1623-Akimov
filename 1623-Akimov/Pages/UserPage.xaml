@@ -27,8 +27,8 @@
         <Label Grid.Row="0" Grid.Column="0" Content="Управление пользователями" Grid.ColumnSpan="3" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center"
             FontFamily="Arial" FontSize="20"/>
         
-        <Button Name="btnUsrNew"  Grid.Row="1" Grid.Column="0" ToolTip="нажмите для создания нового пользователя" Height="70" Width="200" Margin="5,0,0,0" Grid.RowSpan="2"
-              FontFamily="Arial" FontSize="16" Background="Gray" VerticalAlignment="Center" HorizontalAlignment="Left">
+        <Button Name="btnUsrNew"  Grid.Row="1" Grid.Column="0" ToolTip="нажмите для создания нового пользователя" Height="70" Width="200"  Grid.RowSpan="2"
+               VerticalAlignment="Center" HorizontalAlignment="Left">
             <TextBlock TextAlignment="Center"> +Добавление <LineBreak/> нового</TextBlock>
         </Button>
         
@@ -54,8 +54,8 @@
         <TextBlock Text="Поиск" Grid.Row="3" Grid.Column="2" Height="30" Width="150" Margin="5" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Left"
             FontFamily="Arial" FontSize="18"/>
         
-        <Button Name="btnUsrRsrch"  Grid.Row="4" Grid.Column="2" ToolTip="нажмите для создания нового пользователя" Height="50" Width="120" Margin="5" 
-              FontFamily="Arial" FontSize="16" Background="Gray" VerticalAlignment="Center" HorizontalAlignment="Left">
+        <Button Name="btnUsrRsrch"  Grid.Row="4" Grid.Column="2" ToolTip="нажмите для создания нового пользователя" Width="120" 
+              VerticalAlignment="Center" HorizontalAlignment="Left">
         <TextBlock TextAlignment="Center"> Обновить</TextBlock>
         </Button>
         

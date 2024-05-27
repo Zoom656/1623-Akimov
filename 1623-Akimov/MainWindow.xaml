@@ -19,17 +19,17 @@
 
 
         </Grid.RowDefinitions>
-        <Frame Content="" Source="Pages/AuthPage.xaml"  Name="MainFrame"  Grid.Row="1" Height="330" VerticalAlignment="Center" HorizontalAlignment="Right" Width="800" Navigated="MainFrame_OnNavigated" />
-        <Button Name="btnMainBack" Content="Назад" Background="Beige" ToolTip="Кликните для возврата на предыдущую страницу"
-                HorizontalAlignment="Left" Height="30" Width="60" FontFamily="Arial" FontSize="12" Foreground="Chocolate" Grid.Row="0" Margin="5" Click="btnMainBack_Click" />
+        <Frame Content="" Source="Pages/AuthPage.xaml"  Name="MainFrame"  Grid.Row="1" Height="329" VerticalAlignment="Center" HorizontalAlignment="Right" Width="792" Navigated="MainFrame_OnNavigated" />
+        <Button Name="btnMainBack" Content="Назад" ToolTip="Кликните для возврата на предыдущую страницу"
+                HorizontalAlignment="Left"  Width="60" Grid.Row="0" Click="btnMainBack_Click" />
         
-        <Button Name="btnMainUsr" Background="Beige" ToolTip="Нажмите для прехода на страницу управления пользователями"
-                HorizontalAlignment="Right" Height="30" Width="100" FontFamily="Arial" FontSize="12" Foreground="Chocolate" Grid.Row="0" Margin="5" Click="btnMainUsr_Click"  >
+        <Button Name="btnMainUsr" ToolTip="Нажмите для прехода на страницу управления пользователями"
+                HorizontalAlignment="Right" Width="160" Grid.Row="0" Margin="5" Click="btnMainUsr_Click"  >
             <TextBlock TextAlignment="Center"> Управление <LineBreak/> пользователями</TextBlock>
         </Button>
 
-        <Button Name="btnMainPrtn" Background="Beige" ToolTip="Нажмите для прехода на страницу с бизнес-партнерами"
-        HorizontalAlignment="Center" Height="30" Width="120" FontFamily="Arial" FontSize="12" Foreground="Chocolate" Grid.Row="0" Margin="5" Click="btnMainPrtn_Click" >
+        <Button Name="btnMainPrtn" ToolTip="Нажмите для прехода на страницу с бизнес-партнерами"
+        HorizontalAlignment="Center" Width="120" Grid.Row="0" Margin="5" Click="btnMainPrtn_Click" >
             <TextBlock TextAlignment="Center"> Бизнес-партнеры</TextBlock>
         </Button>
         
