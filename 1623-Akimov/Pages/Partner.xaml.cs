@@ -10,24 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace _1623_Akimov.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для UserEditPage.xaml
+    /// Логика взаимодействия для Partner.xaml
     /// </summary>
-    public partial class UserEditPage : Page
+    public partial class Partner : Window
     {
-        public UserEditPage()
+        public Partner()
         {
             InitializeComponent();
-        }
-
-        private void btnUsredCncl_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new AuthPage());
         }
     }
 }

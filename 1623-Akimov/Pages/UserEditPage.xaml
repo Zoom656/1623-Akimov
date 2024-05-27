@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:_1623_Akimov.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="344" d:DesignWidth="800"
       Title="UserEditPage">
 
     <Grid>
@@ -16,12 +16,11 @@
             <ColumnDefinition Width="100*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50*"/>
-            <RowDefinition Height="50*"/>
-            <RowDefinition Height="50*"/>
-            <RowDefinition Height="50*"/>
-            <RowDefinition Height="39*"/>
-            <RowDefinition Height="32*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="45*"/>
             <RowDefinition Height="45*"/>
             <RowDefinition Height="45*"/>
             <RowDefinition Height="45*"/>
@@ -76,7 +75,7 @@
                " Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center"
             FontFamily="Arial" FontSize="16">
             <TextBlock 
-                TextAlignment="Center"> Оставьте эти поля, незаполненными, <LineBreak/> еслиВы не хотите изменять пароль
+                TextAlignment="Center"> Оставьте эти поля, незаполненными, <LineBreak/> если Вы не хотите изменять пароль
             </TextBlock>
         </Label>
 
@@ -96,7 +95,7 @@
              FontFamily="Arial" FontSize="12" Background="Gray" HorizontalAlignment="Right" Margin="10" />
 
         <Button Name="btnUsredCncl" Content="Отмена" Grid.Row="8" Grid.Column="2" ToolTip="нажмите для отмены" Height="30" Width="100"
-            FontFamily="Arial" FontSize="12" Background="Gray" HorizontalAlignment="Left" Margin="10"/>
+            FontFamily="Arial" FontSize="12" Background="Gray" HorizontalAlignment="Left" Margin="10" Click="btnUsredCncl_Click"/>
 
     </Grid>
 </Page>

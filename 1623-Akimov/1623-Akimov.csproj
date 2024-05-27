@@ -74,6 +74,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Partner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\RegPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -90,6 +94,9 @@
   <ItemGroup>
     <Compile Include="Pages\AuthPage.xaml.cs">
       <DependentUpon>AuthPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Partner.xaml.cs">
+      <DependentUpon>Partner.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\RegPage.xaml.cs">
       <DependentUpon>RegPage.xaml</DependentUpon>
@@ -127,6 +134,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="cart_business_shop_online_store_integration_ecommerce_icon_261710.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -34,5 +34,10 @@ namespace _1623_Akimov.Pages
         {
             NavigationService.Navigate(new UserPage());
         }
+
+        private void btnAuthEntr_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new UserEditPage());
+        }
     }
 }
