@@ -26,33 +26,40 @@
         </Grid.RowDefinitions>
         <Label Grid.Row="0" Grid.Column="0" Content="Управление пользователями" Grid.ColumnSpan="3" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center"
             FontFamily="Arial" FontSize="20"/>
+        
         <Button Name="btnUsrNew"  Grid.Row="1" Grid.Column="0" ToolTip="нажмите для создания нового пользователя" Height="70" Width="200" Margin="5,0,0,0" Grid.RowSpan="2"
               FontFamily="Arial" FontSize="16" Background="Gray" VerticalAlignment="Center" HorizontalAlignment="Left">
             <TextBlock TextAlignment="Center"> +Добавление <LineBreak/> нового</TextBlock>
         </Button>
+        
         <Label Content="Фильтр по ролям:" Grid.Row="1" Grid.Column="1" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
             FontFamily="Arial" FontSize="16"/>
         <ComboBox Name="cmbUsrFltr"  Grid.Row="1" Grid.Column="2" Height="25" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите роль">
-            <ComboBoxItem>1</ComboBoxItem>
-            <ComboBoxItem>2</ComboBoxItem>
+            <ComboBoxItem>Все роли</ComboBoxItem>
+            <ComboBoxItem>Администратор</ComboBoxItem>
+            <ComboBoxItem>Пользователь</ComboBoxItem>
         </ComboBox>
+        
         <Label Content="Сортировать по:" Grid.Row="2" Grid.Column="1" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
             FontFamily="Arial" FontSize="16"/>
         <ComboBox Name="cmbUsrSort"  Grid.Row="2" Grid.Column="2" Height="25" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите сортировку">
-            <ComboBoxItem>1</ComboBoxItem>
-            <ComboBoxItem>2</ComboBoxItem>
+            <ComboBoxItem>Имени</ComboBoxItem>
+            <ComboBoxItem>Фамилии</ComboBoxItem>
         </ComboBox>
+        
         <Label Content="Поиск:" Grid.Row="3" Grid.Column="1" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
             FontFamily="Arial" FontSize="16"/>
         <TextBox Name="txtUsrSrch" Grid.Row="3" Grid.Column="2" Height="30" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите логин или почту"
             FontFamily="Arial" FontSize="12" Background="Transparent"/>
-        <TextBlock Grid.Row="3" Grid.Column="2" Height="30" Width="150" Margin="5" Text="Поиск" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Left"
-            FontFamily="Arial" FontSize="12"/>
+        <TextBlock Text="Поиск" Grid.Row="3" Grid.Column="2" Height="30" Width="150" Margin="5" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Left"
+            FontFamily="Arial" FontSize="18"/>
+        
         <Button Name="btnUsrRsrch"  Grid.Row="4" Grid.Column="2" ToolTip="нажмите для создания нового пользователя" Height="50" Width="120" Margin="5" 
               FontFamily="Arial" FontSize="16" Background="Gray" VerticalAlignment="Center" HorizontalAlignment="Left">
         <TextBlock TextAlignment="Center"> Обновить</TextBlock>
         </Button>
-        <TextBlock Grid.Row="5" Grid.Column="0" Height="30" Width="200" Margin="5" Text="Всего пользователей: 123" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Left"
+        
+        <TextBlock Grid.Row="5" Grid.Column="0" Height="30" Width="220" Margin="5" Text="Всего пользователей: 123" FontWeight="DemiBold" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Left"
             FontFamily="Arial" FontSize="16"/>
         <DataGrid AutoGenerateColumns="False" IsReadOnly="True" Grid.ColumnSpan="3" Grid.Row="6">
            
@@ -61,22 +68,16 @@
                     <DataGridTextColumn Header="Фамилия" Width="*"/>
                     <DataGridTextColumn Header="Email" Width="*"/>
                     <DataGridTextColumn Header="Роль" Width="*"/>
-                    <DataGridTemplateColumn Header="Редактирование" Width="*">
-                        <DataGridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <Button Content="Edit"/>
-                            </DataTemplate>
-                        </DataGridTemplateColumn.CellTemplate>
-                    </DataGridTemplateColumn>
-
-            
-
+                <DataGridTemplateColumn Header="Редактирование" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Edit"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
-            <DataGrid.Items>
-               
+           
 
-
-            </DataGrid.Items>
         </DataGrid>
 
     </Grid>

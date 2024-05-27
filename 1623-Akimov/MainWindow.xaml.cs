@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _1623_Akimov.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -38,6 +39,11 @@ namespace _1623_Akimov
                 btnMainBack.Visibility = Visibility.Hidden;
             else
                 btnMainBack.Visibility = Visibility.Visible;
+        }
+
+        private void btnMainUsr_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new UserPage());
         }
     }
 }
