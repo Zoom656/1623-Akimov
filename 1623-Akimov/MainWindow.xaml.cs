@@ -48,7 +48,7 @@ namespace _1623_Akimov
 
         private void btnMainPrtn_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.NavigationService.Navigate(new Partner());
+            MainFrame.NavigationService.Navigate(new PartnerPage());
         }
     }
 }

@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace _1623_Akimov.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для StartPage.xaml
+    /// Логика взаимодействия для PartnerPage.xaml
     /// </summary>
-    public partial class StartPage : Window
+    public partial class PartnerPage : Page
     {
-        public StartPage()
+        public PartnerPage()
         {
             InitializeComponent();
         }
-
-        private void menuExit_Click(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Shutdown();
-        }
- 
+    }
 }
