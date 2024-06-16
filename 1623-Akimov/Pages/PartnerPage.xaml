@@ -15,8 +15,7 @@
             <RowDefinition Height="244*"/>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0" Content="Бизнес-партнеры" Grid.ColumnSpan="2" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center"
-            FontFamily="Arial" FontSize="20"/>
+        <Label Grid.Row="0" Content="Бизнес-партнеры" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
 
         <Button Name="btnUsrNew"  Grid.Row="1" ToolTip="нажмите для создания нового пользователя" Height="40" Width="160"  
              VerticalAlignment="Center" HorizontalAlignment="Left">

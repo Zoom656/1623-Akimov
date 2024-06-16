@@ -24,33 +24,28 @@
             <RowDefinition Height="45*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" Grid.Column="0" Content="Управление пользователями" Grid.ColumnSpan="3" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center"
-            FontFamily="Arial" FontSize="20"/>
+        <Label Grid.Row="0" Grid.Column="0" Content="Управление пользователями" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
         
         <Button Name="btnUsrNew"  Grid.Row="1" Grid.Column="0" ToolTip="нажмите для создания нового пользователя" Height="70" Width="200"  Grid.RowSpan="2"
                VerticalAlignment="Center" HorizontalAlignment="Left">
             <TextBlock TextAlignment="Center"> +Добавление <LineBreak/> нового</TextBlock>
         </Button>
         
-        <Label Content="Фильтр по ролям:" Grid.Row="1" Grid.Column="1" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
-            FontFamily="Arial" FontSize="16"/>
-        <ComboBox Name="cmbUsrFltr"  Grid.Row="1" Grid.Column="2" Height="25" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите роль">
+        <Label Content="Фильтр по ролям:" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="16"/>
+        <ComboBox Name="cmbUsrFltr"  Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите роль">
             <ComboBoxItem>Все роли</ComboBoxItem>
             <ComboBoxItem>Администратор</ComboBoxItem>
             <ComboBoxItem>Пользователь</ComboBoxItem>
         </ComboBox>
         
-        <Label Content="Сортировать по:" Grid.Row="2" Grid.Column="1" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
-            FontFamily="Arial" FontSize="16"/>
-        <ComboBox Name="cmbUsrSort"  Grid.Row="2" Grid.Column="2" Height="25" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите сортировку">
+        <Label Content="Сортировать по:" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="16"/>
+        <ComboBox Name="cmbUsrSort"  Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите сортировку">
             <ComboBoxItem>Имени</ComboBoxItem>
             <ComboBoxItem>Фамилии</ComboBoxItem>
         </ComboBox>
         
-        <Label Content="Поиск:" Grid.Row="3" Grid.Column="1" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
-            FontFamily="Arial" FontSize="16"/>
-        <TextBox Name="txtUsrSrch" Grid.Row="3" Grid.Column="2" Height="30" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите логин или почту"
-            FontFamily="Arial" FontSize="12" Background="Transparent"/>
+        <Label Content="Поиск:" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="16"/>
+        <TextBox Name="txtUsrSrch" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите логин или почту"/>
         <TextBlock Text="Поиск" Grid.Row="3" Grid.Column="2" Height="30" Width="150" Margin="5" Foreground="Gray" VerticalAlignment="Center" HorizontalAlignment="Left"
             FontFamily="Arial" FontSize="18"/>
         

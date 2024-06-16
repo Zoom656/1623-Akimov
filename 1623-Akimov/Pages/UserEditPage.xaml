@@ -23,79 +23,63 @@
             <RowDefinition Height="45*"/>
             <RowDefinition Height="45*"/>
             <RowDefinition Height="45*"/>
-            <RowDefinition Height="45*"/>
+            <RowDefinition Height="60*"/>
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" Grid.Column="1" Content="Редактирование профиля" Grid.ColumnSpan="2" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center"
-            FontFamily="Arial" FontSize="20"/>
+        <Label Grid.Row="0" Grid.Column="1" Content="Редактирование профиля" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
         
-        <Label Content="Email" Grid.Row="1" Grid.Column="0" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
-             FontFamily="Arial" FontSize="16"/>
-        <Label Content="the.email@addres.com" FontWeight="DemiBold" Grid.Row="1" Grid.Column="1" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"
-            FontFamily="Arial" FontSize="16"/>
+        <Label Content="Email" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="16"/>
+        <Label Content="the.email@addres.com" Width="200" FontWeight="DemiBold" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="16"/>
         
-        <Label Content="Имя" Grid.Row="2" Grid.Column="0" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
-            FontFamily="Arial" FontSize="16"/>
-        <TextBox Name="txtUsredName" Grid.Row="2" Grid.Column="1" Height="25" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите имя"
-             FontFamily="Arial" FontSize="12" Background="Transparent"/>
+        <Label Content="Имя" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="16"/>
+        <TextBox Name="txtUsredName" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите имя"/>
         
-        <Label Content="Фамилия" Grid.Row="3" Grid.Column="0" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
-            FontFamily="Arial" FontSize="16"/>
-        <TextBox Name="txtUsredSirname" Grid.Row="3" Grid.Column="1" Height="25" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите фамилию"
-            FontFamily="Arial" FontSize="12" Background="Transparent"/>
+        <Label Content="Фамилия" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="16"/>
+        <TextBox Name="txtUsredSirname" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите фамилию"/>
         
-        <Label Content="Пол" Grid.Row="4" Grid.Column="0" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
-            FontFamily="Arial" FontSize="16"/>
-        <ComboBox Name="cmbUsredGndr"  Grid.Row="4" Grid.Column="1" Height="25" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите пол">
+        <Label Content="Пол" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="16"/>
+        <ComboBox Name="cmbUsredGndr"  Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите пол">
             <ComboBoxItem>Мужской</ComboBoxItem>
             <ComboBoxItem>Женский</ComboBoxItem>       
         </ComboBox>
 
-        <Label Content="Дата рождения" Grid.Row="5" Grid.Column="0" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
-            FontFamily="Arial" FontSize="16"/>
-        <DatePicker  Grid.Row="5" Grid.Column="1"  Height="25" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите дату рождения" DisplayDateStart="01/01/1850" DisplayDateEnd="01/01/2010" 
+        <Label Content="Дата рождения" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="16"/>
+        <DatePicker  Grid.Row="5" Grid.Column="1"  Height="30" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите дату рождения" DisplayDateStart="01/01/1850" DisplayDateEnd="01/01/2010" 
                      FirstDayOfWeek="Monday" DisplayDate="02/01/1990" SelectedDateFormat="Long"/>
 
-        <Label Content="Страна" Grid.Row="6" Grid.Column="0" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
-            FontFamily="Arial" FontSize="16"/>
-        <ComboBox Name="cmbUsredState"  Grid.Row="6" Grid.Column="1" Height="25" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите пол">
+        <Label Content="Страна" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="16"/>
+        <ComboBox Name="cmbUsredState"  Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите пол">
             <ComboBoxItem>Россия</ComboBoxItem>
             <ComboBoxItem>Белоруссия</ComboBoxItem>
             <ComboBoxItem>Казахстан</ComboBoxItem>
             <ComboBoxItem>Кыргызстан</ComboBoxItem>
+            <ComboBoxItem>Таджикистан</ComboBoxItem>
             <ComboBoxItem>Узбекистан</ComboBoxItem>
             <ComboBoxItem>Украина</ComboBoxItem>
         </ComboBox>
 
-        <Label Content="Смена пароля" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center"
-            FontFamily="Arial" FontSize="16">
+        <Label Content="Смена пароля" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16">
             
         </Label>
         
-        <Label Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2
-               " Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center"
-            FontFamily="Arial" FontSize="16">
+        <Label Height="80" Width="300" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16">
             <TextBlock 
                 TextAlignment="Center"> Оставьте эти поля, незаполненными, <LineBreak/> если Вы не хотите изменять пароль
             </TextBlock>
         </Label>
 
-        <Label Content="пароль" Grid.Row="4" Grid.Column="2" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
-            FontFamily="Arial" FontSize="16"/>
-        <PasswordBox Grid.Row="4" Grid.Column="3"  Height="25" Width="150" HorizontalAlignment="Left" ToolTip="введите пароль">
+        <Label Content="Пароль" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="16"/>
+        <PasswordBox Grid.Row="4" Grid.Column="3"  HorizontalAlignment="Left" ToolTip="введите пароль">
             
         </PasswordBox>
 
-        <Label Content="Повтор пароля" Grid.Row="5" Grid.Column="2" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"
-            FontFamily="Arial" FontSize="16"/>
-        <PasswordBox Grid.Row="5" Grid.Column="3"  Height="25" Width="150" HorizontalAlignment="Left" ToolTip="еще раз введите пароль">
+        <Label Content="Повтор пароля" Grid.Row="5" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="16"/>
+        <PasswordBox Grid.Row="5" Grid.Column="3" HorizontalAlignment="Left" ToolTip="еще раз введите пароль">
 
         </PasswordBox>
         
-        <Button Name="btnUsredSave" Content="Сохранить" Grid.Row="8" Grid.Column="1" ToolTip="нажмите чтобы сохранить" Width="100"
-             HorizontalAlignment="Right" Margin="10" />
+        <Button Name="btnUsredSave" Content="Сохранить" Grid.Row="8" Grid.Column="1" ToolTip="нажмите чтобы сохранить" HorizontalAlignment="Right" Margin="10" />
 
-        <Button Name="btnUsredCncl" Content="Отмена" Grid.Row="8" Grid.Column="2" ToolTip="нажмите для отмены" Width="100"
-            HorizontalAlignment="Left" Margin="10" Click="btnUsredCncl_Click"/>
+        <Button Name="btnUsredCncl" Content="Отмена" Grid.Row="8" Grid.Column="2" ToolTip="нажмите для отмены" HorizontalAlignment="Left" Margin="10" Click="btnUsredCncl_Click"/>
 
     </Grid>
 </Page>

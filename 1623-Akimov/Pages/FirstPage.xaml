@@ -29,8 +29,8 @@
 
             <MenuItem Margin="5 0 0 0" Header="Настройка" Height="25" >
                 <MenuItem Header="Тема">
-                    <MenuItem Name="menuLight" Header="Светлая"></MenuItem>
-                    <MenuItem Name="menuDark" Header="Темная"></MenuItem>
+                    <MenuItem Name="menuLight" Header="Светлая" Click="menuLight_Click"></MenuItem>
+                    <MenuItem Name="menuDark" Header="Темная" Click="menuDark_Click"></MenuItem>
                 </MenuItem>
                 <MenuItem Header="Фоновый рисунок">
                     <MenuItem Name="menuFon1" Header="Фон1" Click="menuFon1_Click"></MenuItem>

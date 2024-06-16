@@ -64,5 +64,22 @@ namespace _1623_Akimov.Pages
         {
             fon1.Source = new BitmapImage(new Uri("../Resources/yandex.png", UriKind.Relative));
         }
+
+        private void menuLight_Click(object sender, RoutedEventArgs e)
+        {
+            var uri = new Uri("Dictionary.xaml", UriKind.Relative);
+            ResourceDictionary resourceDict = Application.LoadComponent(uri) as ResourceDictionary; 
+            Application.Current.Resources.Clear();
+            Application.Current.Resources.MergedDictionaries.Add(resourceDict);
+
+        }
+
+        private void menuDark_Click(object sender, RoutedEventArgs e)
+        {
+            var uri = new Uri("Dictionary2.xaml", UriKind.Relative);
+            ResourceDictionary resourceDict = Application.LoadComponent(uri) as ResourceDictionary;
+            Application.Current.Resources.Clear();
+            Application.Current.Resources.MergedDictionaries.Add(resourceDict);
+        }
     }
 }
